@@ -2,6 +2,7 @@
 // import FooterLinkGroup from "@/components/home/FooterLinkGroup";
 import ImageCard from "@/components/home/ImageCard";
 // import NewsletterForm from "@/components/home/NewsletterForm";
+import { SignInButton } from "@/components/auth/sign-in-button"
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -99,11 +100,7 @@ export default function Home() {
                     <Link href="#about">About</Link>
                   </nav>
 
-                  <Link href="/dashboard">
-                    <Button className="bg-white text-black px-7 font-semibold">
-                      Login
-                    </Button>
-                  </Link>
+                  <SignInButton />
                 </div>
                 {/* Rest of the component implementation follows with the extracted components */}
                 {/* Features section */}
