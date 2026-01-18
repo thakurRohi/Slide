@@ -85,7 +85,7 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <div className="flex flex-col w-full max-md:ml-0 max-md:w-full">
               <div className="flex overflow-hidden flex-col w-full max-md:mt-10 max-md:max-w-full">
-                <div className="flex items-center justify-between">
+                {/* <div className="flex items-center justify-between">.
                   <div className="flex items-center gap-2 mt-4">
                     <div className="h-8 w-8 rounded-lg bg-white text-black flex items-center justify-center font-bold">
                       li
@@ -100,8 +100,8 @@ export default function Home() {
                     <Link href="#about">About</Link>
                   </nav>
 
-                  <SignInButton />
-                </div>
+                 
+                </div> */}
                 {/* Rest of the component implementation follows with the extracted components */}
                 {/* Features section */}
 

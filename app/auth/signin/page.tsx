@@ -6,6 +6,8 @@ export default function SignInPage({
 }: {
   searchParams: { callbackUrl?: string }
 }) {
+  const callbackUrl = searchParams.callbackUrl || "/"
+  
   return (
     <div className="flex min-h-screen items-center justify-center">
       <div className="w-full max-w-md space-y-4 rounded-lg border p-8">
@@ -15,7 +17,7 @@ export default function SignInPage({
         <form
           action={async () => {
             "use server"
-            await signIn("google", { redirectTo: searchParams.callbackUrl })
+            await signIn("google", { redirectTo: callbackUrl })
           }}
         >
           <Button type="submit" className="w-full">
@@ -26,7 +28,7 @@ export default function SignInPage({
         <form
           action={async () => {
             "use server"
-            await signIn("github", { redirectTo: searchParams.callbackUrl })
+            await signIn("github", { redirectTo: callbackUrl })
           }}
         >
           <Button type="submit" variant="outline" className="w-full">

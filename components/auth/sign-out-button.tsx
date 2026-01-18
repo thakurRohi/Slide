@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 export function SignOutButton() {
   return (
     <Button
-      onClick={() => signOut()}
+      onClick={() => signOut({ callbackUrl: "/" })}
       variant="outline"
     >
       Sign Out
